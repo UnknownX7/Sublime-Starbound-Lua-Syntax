@@ -52,6 +52,6 @@ function $1.preventStateChange(stateData)
 end
 ${0}]]></content>
     <tabTrigger>TEMPLATE:npcstate</tabTrigger>
-    <scope>source.lua</scope>
+    <scope>source.lua.starbound</scope>
     <description>NPC State Hooks Template</description>
 </snippet>

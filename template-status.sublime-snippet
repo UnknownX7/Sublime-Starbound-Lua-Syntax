@@ -14,6 +14,6 @@ function uninit()
 end
 ${0}]]></content>
     <tabTrigger>TEMPLATE:status</tabTrigger>
-    <scope>source.lua</scope>
+    <scope>source.lua.starbound</scope>
     <description>Status Effect Hooks Template</description>
 </snippet>

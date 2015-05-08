@@ -44,6 +44,6 @@ function update(args)
 end
 ${0}]]></content>
     <tabTrigger>TEMPLATE:tech</tabTrigger>
-    <scope>source.lua</scope>
+    <scope>source.lua.starbound</scope>
     <description>Tech Hooks Template</description>
 </snippet>

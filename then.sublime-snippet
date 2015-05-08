@@ -3,6 +3,6 @@
 	${1}
 end${0}]]></content>
 	<tabTrigger>then</tabTrigger>
-	<scope>source.lua</scope>
+	<scope>source.lua.starbound</scope>
 	<description>then</description>
 </snippet>

@@ -3,6 +3,6 @@
 	${1}
 until ${0}]]></content>
 	<tabTrigger>repeat</tabTrigger>
-	<scope>source.lua</scope>
+	<scope>source.lua.starbound</scope>
 	<description>repeat</description>
 </snippet>

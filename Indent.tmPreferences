@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Indent</string>
 	<key>scope</key>
-	<string>source.lua</string>
+	<string>source.lua.starbound</string>
 	<key>settings</key>
 	<dict>
 		<key>decreaseIndentPattern</key>
@@ -14,6 +14,6 @@
 		<string>^\s*(else|elseif|for|(local\s+)?function|if|repeat|until|while)\b((?!end).)*$|.*\{\s*$</string>
 	</dict>
 	<key>uuid</key>
-	<string>411468A8-E0AC-415A-9E71-E2BD091EB571</string>
+	<string>72e47a06-7522-445a-b1f9-e23ac7544d51</string>
 </dict>
 </plist>

@@ -44,6 +44,6 @@ function triggerCooldown()
 end
 ${0}]]></content>
     <tabTrigger>TEMPLATE:fireableItem</tabTrigger>
-    <scope>source.lua</scope>
+    <scope>source.lua.starbound</scope>
     <description>Fireable Item Hooks Template</description>
 </snippet>

@@ -12,7 +12,7 @@ To install this, it is recommended that you use [Package Control](https://packag
 #### Sublime Text 3
 1. Once you have it installed you will need to disable the default Lua syntax. Press <kbd>Shift+Ctrl+P</kbd> again.
 2. Type `disable` and press enter.
-3. Type `lua` and press enter. (If you have any other Lua syntaxes you will need to disable them also or else their autocompletions will be shown)
+3. Type `lua` and press enter. (If you have any other Lua syntaxes you will need to disable them also or else their autocompletions and snippets will be shown)
 
 ### Manual Install:
 1. Download this Git Repository as a `.zip` file.
@@ -33,7 +33,7 @@ To install this, it is recommended that you use [Package Control](https://packag
 	]
 }
 ```
-Make sure that you also add any other Lua packages that you have installed to prevent their autocompletions from being shown.
+Make sure that you also add any other Lua syntaxes that you have installed to prevent their autocompletions and snippets from being shown.
 
 ### Usage
 Navigate to `View > Syntax > Starbound Lua` to apply the syntax to the current file and any newly opened files.
