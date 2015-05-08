@@ -1,0 +1,49 @@
+<snippet>
+    <content><![CDATA[function init()
+	${1:-- Called upon equipping the tech.}
+end
+
+function uninit()
+	${2:-- Called upon unequipping the tech.}
+end
+
+function input(args)
+	${3:-- Called every scriptDelta ticks (defined by *.tech file?) BEFORE update()
+
+	-- Layout of args table is as follows
+	-- args = \{
+	-- 	moves = \{
+	-- 		run = boolean,
+	-- 		up = boolean,
+	-- 		down = boolean,
+	-- 		right = boolean,
+	-- 		left = boolean,
+	-- 		jump = boolean,
+	-- 		primaryFire = boolean,
+	-- 		altFire = boolean,
+	-- 		special = 0 or 1? 1 is the F key
+	-- 	\},
+	-- 	dt = Time since the last input() hook was executed
+	-- \}
+
+	-- return "actionname" to set the action to true in the update() hook's arg table otherwise return nil}
+end
+
+function update(args)
+	${4:-- Called every scriptDelta ticks (defined by *.tech file?)
+
+	-- Layout of args table is as follows
+	-- args = \{
+	-- 	actions = \{
+	-- 		Boolean variables defined in the *.tech file's "actions" table
+	-- 	\},
+	-- 	dt = Time since the last update() hook was executed
+	-- \}
+
+	-- Unconfirmed Assumption: The args.actions table variables only stay true for one update() call}
+end
+${0}]]></content>
+    <tabTrigger>TEMPLATE:tech</tabTrigger>
+    <scope>source.lua</scope>
+    <description>Tech Hooks Template</description>
+</snippet>

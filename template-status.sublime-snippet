@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[function init()
+	${1:-- Called when the status effect is applied.
+	-- Be sure to use the below function to specify the number of game ticks between update() hooks.}
+	script.setUpdateDelta(${2:5})
+end
+
+function update(dt)
+	${3:-- Called every specified number of ticks.}
+end
+
+function uninit()
+	${4:-- Called when the status effect ends.}
+end
+${0}]]></content>
+    <tabTrigger>TEMPLATE:status</tabTrigger>
+    <scope>source.lua</scope>
+    <description>Status Effect Hooks Template</description>
+</snippet>

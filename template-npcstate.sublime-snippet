@@ -1,0 +1,57 @@
+<snippet>
+    <content><![CDATA[${1:state} = {}
+
+function $1.enter${2:With}(${3:args})
+	${4:-- Attempts to enter the state, returning state data (i.e. not nil) that
+	-- will be available to the state while it is running if the state could
+	-- be entered.
+
+	-- A single state need only implement one of these (enter() or enterWith(args)) - if
+	-- args are passed to pickState, enterWith will be called instead of enter,
+	-- in which case only states that implement enterWith will be called.
+
+	-- If returning nil (i.e. don't enter state), can also return a second
+	-- value that will be used as a cooldown time before the state will be
+	-- considered again.}
+end
+
+function $1.enteringState(stateData)
+	${5:-- Called when the state is being entered, after state.enter has been
+	-- called, but also after the previous state's (if there was one) leaving
+	-- callback has been called, after the global leavingState callback has
+	-- been called, and after the global enteringState callback has been
+	-- called Note that this may be called on the update prior to the first
+	-- call to state.update, or on the same update as the first call to
+	-- state.update (depending on whether there was a previous state).}
+end
+
+function $1.update(dt, stateData)
+	${6:-- The update function of the state, which will be called with two
+	-- arguments: deltaTime and the state data returned from stateStart.
+	-- When this function returns true, the state will be ended. When
+	-- returning true, can also optionally return a second value that
+	-- will be used as a cooldown time, which must elapse before the
+	-- state can be entered again.}
+end
+
+function $1.leavingState(stateData)
+	${7:-- Called immediately before leaving the state - _before_ the global
+	-- leavingState callback is called.}
+end
+
+function $1.description()
+	${8:-- Returns a string used to describe the current state of the state when
+	-- stateMachine.stateDesc is called. The state name will be used if this
+	-- function is not provided}
+end
+
+function $1.preventStateChange(stateData)
+	${9:-- Called when pickState is called - if a state implements this method and
+	-- it returns false, the only way to exit the state will be for the state's
+	-- update function to return true.}
+end
+${0}]]></content>
+    <tabTrigger>TEMPLATE:npcstate</tabTrigger>
+    <scope>source.lua</scope>
+    <description>NPC State Hooks Template</description>
+</snippet>
