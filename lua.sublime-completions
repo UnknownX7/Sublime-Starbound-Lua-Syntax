@@ -4,7 +4,7 @@
 	"completions":
 	[
 		"in", "else", "return", "false", "true", "break", "or", "and",
-		"_VERSION", "_ENV", "self", "math.huge", "math.pi",
+		"_VERSION", "_ENV", "self", "storage", "math.huge", "math.pi",
 
 		{ "trigger": "setmetatable", "contents": "setmetatable(${1})" },
 		{ "trigger": "print", "contents": "print(${1})" },

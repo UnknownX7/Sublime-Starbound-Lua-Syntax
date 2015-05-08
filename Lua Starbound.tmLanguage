@@ -195,7 +195,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;![^.]\.|:)\b(false|nil|true|_ENV|_VERSION|self|math\.(pi|huge))\b|(?&lt;![.])\.{3}(?!\.)</string>
+			<string>(?&lt;![^.]\.|:)\b(false|nil|true|_ENV|_VERSION|self|storage|math\.(pi|huge))\b|(?&lt;![.])\.{3}(?!\.)</string>
 			<key>name</key>
 			<string>constant.language.lua</string>
 		</dict>
@@ -249,7 +249,7 @@
 		<!-- Starbound Packages -->
 		<dict>
 			<key>match</key>
-			<string>(?&lt;![^.]\.|:)\b(animator|entity|world|universe|tech|root|item|fireableItem|effect|status|mcontroller|util|stateMachine|console|vec2|script|entityProxy|sensors|storage|CommandProcessor)\b|(?&lt;![.])\.{3}(?!\.)</string>
+			<string>(?&lt;![^.]\.|:)\b(animator|entity|world|universe|tech|root|item|fireableItem|effect|status|mcontroller|util|stateMachine|console|vec2|script|entityProxy|sensors|CommandProcessor)\b|(?&lt;![.])\.{3}(?!\.)</string>
 			<key>name</key>
 			<string>constant.language.lua</string>
 		</dict>
