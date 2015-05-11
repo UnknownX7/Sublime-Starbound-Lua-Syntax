@@ -9,20 +9,20 @@ function update(dt)
 end
 
 function attemptedFire()
-	${3:-- Called every update() that the weapon is trying to shoot, even when on cooldown.}
+	${3:-- Called every update() that the weapon is trying to be used, even when on cooldown.}
 end
 
 function startTriggered()
-	${4:-- Called whenever the weapon is off cooldown and attempts to shoot.
-	-- Will be called even if the weapon doesn't successfully shoot.}
+	${4:-- Called whenever the weapon is off cooldown and attempts to fire.
+	-- Will be called even if the weapon doesn't successfully fire.}
 end
 
 function fireTriggered()
-	${5:-- Called whenever the weapon successfully shoots a bullet.}
+	${5:-- Called whenever the weapon successfully fires.}
 end
 
 function continueFire(dt)
-	${6:-- Called immediately before startTriggered() when the weapon is shot for the first time.
+	${6:-- Called immediately before startTriggered() when the weapon is fired for the first time.
 	-- Continues to be called immediately after every attemptedFire() until endFire() is called.
 	-- dt is the time since the last continueFire() was called}
 end
@@ -32,11 +32,12 @@ function endFire()
 end
 
 function triggerWindup()
-	${8:-- Unknown use.}
+	${8:-- Assumed to be used for swords when the animation begins and staves.}
 end
 
 function triggerCooldown()
-	${9:-- Is only called once immediately after init(). Unknown use.}
+	${9:-- Is only called once immediately after init() for guns.
+	-- Assumed to be used for swords after they are swung and staves after they are used.}
 end
 
 function uninit()
