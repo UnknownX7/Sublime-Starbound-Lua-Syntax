@@ -20,7 +20,7 @@ function $1.enteringState(stateData)
 	-- called, but also after the previous state's (if there was one) leaving
 	-- callback has been called, after the global leavingState callback has
 	-- been called, and after the global enteringState callback has been
-	-- called Note that this may be called on the update prior to the first
+	-- called. Note that this may be called on the update prior to the first
 	-- call to state.update, or on the same update as the first call to
 	-- state.update (depending on whether there was a previous state).}
 end
@@ -34,21 +34,21 @@ function $1.update(dt, stateData)
 	-- state can be entered again.}
 end
 
+function $1.preventStateChange(stateData)
+	${7:-- Called when pickState is called - if a state implements this method and
+	-- it returns false, the only way to exit the state will be for the state's
+	-- update function to return true.}
+end
+
 function $1.leavingState(stateData)
-	${7:-- Called immediately before leaving the state - _before_ the global
+	${8:-- Called immediately before leaving the state - _before_ the global
 	-- leavingState callback is called.}
 end
 
 function $1.description()
-	${8:-- Returns a string used to describe the current state of the state when
+	${9:-- Returns a string used to describe the current state of the state when
 	-- stateMachine.stateDesc is called. The state name will be used if this
 	-- function is not provided}
-end
-
-function $1.preventStateChange(stateData)
-	${9:-- Called when pickState is called - if a state implements this method and
-	-- it returns false, the only way to exit the state will be for the state's
-	-- update function to return true.}
 end
 ${0}]]></content>
     <tabTrigger>TEMPLATE:npcstate</tabTrigger>

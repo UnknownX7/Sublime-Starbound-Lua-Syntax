@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[coroutine.create(${1:function(${2})
+	${3}
+end})${0}]]></content>
+    <tabTrigger>coroutine.create</tabTrigger>
+    <scope>source.lua.starbound</scope>
+    <description>coroutine.create</description>
+</snippet>

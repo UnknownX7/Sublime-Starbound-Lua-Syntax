@@ -1,0 +1,65 @@
+<snippet>
+    <content><![CDATA[function init(virtual)
+	${1:--- Called (once) after the object is added to the world.
+	--
+	-- @bool virtual indicates whether the object is in placement preview mode
+	-- (true) or is actually placed in the world (false)}
+end
+
+function update(dt)
+	${2:--- Update loop handler.
+	-- Called once every scriptDelta (defined in *.object) ticks}
+end
+
+function onInteraction(args)
+	${3:--- Called when the object is interacted with.
+	-- Available interaction responses are:
+	--    "OpenCockpitInterface"
+	--    "SitDown"
+	--    "OpenCraftingInterface"
+	--    "OpenCookingInterface"
+	--    "OpenTechInterface"
+	--    "Teleport"
+	--    "OpenSongbookInterface"
+	--    "OpenNpcCraftingInterface"
+	--    "OpenTech3DPrinterDialog"
+	--    "ShowPopup"
+	--    "ScriptConsole"
+	--
+	-- @tab args Map of interaction event arguments:
+	--    \{
+	--      sourceId = <Entity id of the entity interacting with this NPC>
+	--      sourcePosition = <The \{x,y\} position of the interacting entity>
+	--    \}
+	--
+	-- @return[1] nil (no interaction response)
+	-- @treturn[2] string the interaction response that should be performed
+	-- @treturn[3] array the interaction response and configuration:
+	--    \{
+	--       <interaction response string>,
+	--       <interaction response config table (map)>
+	--    \}}
+end
+
+function onNodeConnectionChange()
+	${4:--- Called when a node is connected or disconnected}
+end
+
+function onInboundNodeChange(args)
+	${5:--- Called when the level of an inbound connected node changes
+	--
+	-- @tab args Map of:
+	--    \{
+	--      node = <(int) index of the node that is changing>
+	--      level = <new level of the node>
+	--    \}}
+end
+
+function die()
+	${6:--- Called when the object is about to be removed from the world.}
+end
+${0}]]></content>
+    <tabTrigger>TEMPLATE:object</tabTrigger>
+    <scope>source.lua.starbound</scope>
+    <description>Object Hooks Template</description>
+</snippet>

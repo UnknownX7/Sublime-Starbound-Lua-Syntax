@@ -1,5 +1,5 @@
 {
-	"scope": "source.lua.starbound - keyword.control.lua - constant.language.lua - string",
+	"scope": "source.lua.starbound - keyword.control.lua - constant.language.lua, string",
 
 	"completions":
 	[
@@ -101,11 +101,9 @@
 		{ "trigger": "table.insert", "contents": "table.insert(${1})" },
 
 		{ "trigger": "coroutine.running", "contents": "coroutine.running(${1})" },
-		{ "trigger": "coroutine.wrap", "contents": "coroutine.wrap(${1})" },
 		{ "trigger": "coroutine.yield", "contents": "coroutine.yield(${1})" },
 		{ "trigger": "coroutine.status", "contents": "coroutine.status(${1})" },
 		{ "trigger": "coroutine.resume", "contents": "coroutine.resume(${1})" },
-		{ "trigger": "coroutine.create", "contents": "coroutine.create(${1})" },
 
 		{ "trigger": "entity.configParameter", "contents": "entity.configParameter(${1})" },
 		{ "trigger": "entity.randomizeParameter", "contents": "entity.randomizeParameter(${1})" },

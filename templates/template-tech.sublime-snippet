@@ -3,12 +3,8 @@
 	${1:-- Called upon equipping the tech.}
 end
 
-function uninit()
-	${2:-- Called upon unequipping the tech.}
-end
-
 function input(args)
-	${3:-- Called every scriptDelta ticks (defined by *.tech file?) BEFORE update()
+	${2:-- Called every scriptDelta ticks (defined by *.tech file?) BEFORE update()
 
 	-- Layout of args table is as follows
 	-- args = \{
@@ -26,11 +22,11 @@ function input(args)
 	-- 	dt = Time since the last input() hook was executed
 	-- \}
 
-	-- return "actionname" to set the action to true in the update() hook's arg table otherwise return nil}
+	-- return "actionname" to set the action to true in the update() hook's args table otherwise return nil}
 end
 
 function update(args)
-	${4:-- Called every scriptDelta ticks (defined by *.tech file?)
+	${3:-- Called every scriptDelta ticks (defined by *.tech file?)
 
 	-- Layout of args table is as follows
 	-- args = \{
@@ -41,6 +37,10 @@ function update(args)
 	-- \}
 
 	-- Unconfirmed Assumption: The args.actions table variables only stay true for one update() call}
+end
+
+function uninit()
+	${4:-- Called upon unequipping the tech.}
 end
 ${0}]]></content>
     <tabTrigger>TEMPLATE:tech</tabTrigger>

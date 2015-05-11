@@ -9,12 +9,8 @@ function update(dt)
 	${2:--- Update loop handler, called once every scriptDelta (defined in *.monstertype) ticks}
 end
 
-function die()
-	${3:--- Called when shouldDie has returned true and the monster and is about to be removed from the world}
-end
-
 function damage(args)
-	${4:--- Called after the NPC has taken damage
+	${3:--- Called after the NPC has taken damage
 	--
 	-- @tab args Map of info about the damage, structured as:
 	--    \{
@@ -28,12 +24,16 @@ function damage(args)
 end
 
 function shouldDie()
-	${5:--- Called each update to determine if the monster should die.
+	${4:--- Called each update to determine if the monster should die.
 	--
 	-- If not defined in the monster's lua, will default to returning true when
 	-- the monster's health has been depleted.
 	--
 	-- @treturn bool true if the monster can die, false to keep the monster alive}
+end
+
+function die()
+	${5:--- Called when shouldDie has returned true and the monster and is about to be removed from the world}
 end
 ${0}]]></content>
     <tabTrigger>TEMPLATE:monster</tabTrigger>
