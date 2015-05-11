@@ -286,7 +286,7 @@
 		{ "trigger": "world.debugText", "contents": "world.debugText(${1})" },
 		{ "trigger": "world.logInfo", "contents": "world.logInfo(${1})" },
 
-		{ "trigger": "world.callScriptedEntity", "contents": "world.callScriptedEntity(${1})" },
+		{ "trigger": "world.callScriptedEntity", "contents": "world.callScriptedEntity(${1:ent}, \"${2:func}\", ${3:...})" },
 		{ "trigger": "world.containerAddItems", "contents": "world.containerAddItems(${1})" },
 		{ "trigger": "world.containerAvailable", "contents": "world.containerAvailable(${1})" },
 		{ "trigger": "world.containerClose", "contents": "world.containerClose(${1})" },
