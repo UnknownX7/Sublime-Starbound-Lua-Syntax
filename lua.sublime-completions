@@ -4,7 +4,7 @@
 	"completions":
 	[
 		"in", "else", "return", "false", "true", "break", "or", "and",
-		"_VERSION", "_ENV", "self", "storage", "math.huge", "math.pi",
+		"_VERSION", "_ENV", "self", "storage", "math.huge", "math.pi", "math.maxinteger", "math.mininteger",
 
 		{ "trigger": "setmetatable", "contents": "setmetatable(${1})" },
 		{ "trigger": "print", "contents": "print(${1})" },
@@ -29,7 +29,6 @@
 		{ "trigger": "error", "contents": "error(${1})" },
 		{ "trigger": "assert", "contents": "assert(${1})" },
 		{ "trigger": "ipairs", "contents": "ipairs(${1})" },
-		{ "trigger": "unpack", "contents": "unpack(${1})" },
 
 		{ "trigger": "bit32.extract", "contents": "bit32.extract(${1})" },
 		{ "trigger": "bit32.btest", "contents": "bit32.btest(${1})" },
@@ -58,6 +57,9 @@
 		{ "trigger": "string.lower", "contents": "string.lower(${1})" },
 		{ "trigger": "string.gsub", "contents": "string.gsub(${1})" },
 		{ "trigger": "string.match", "contents": "string.match(${1})" },
+		{ "trigger": "string.unpack", "contents": "string.unpack(${1})" },
+		{ "trigger": "string.packsize", "contents": "string.packsize(${1})" },
+		{ "trigger": "string.pack", "contents": "string.pack(${1})" },
 
 		{ "trigger": "math.atan2", "contents": "math.atan2(${1})" },
 		{ "trigger": "math.pow", "contents": "math.pow(${1})" },
@@ -87,6 +89,9 @@
 		{ "trigger": "math.log", "contents": "math.log(${1})" },
 		{ "trigger": "math.fmod", "contents": "math.fmod(${1})" },
 		{ "trigger": "math.tanh", "contents": "math.tanh(${1})" },
+		{ "trigger": "math.tointeger", "contents": "math.tointeger(${1})" },
+		{ "trigger": "math.ult", "contents": "math.ult(${1})" },
+		{ "trigger": "math.type", "contents": "math.type(${1})" },
 
 		{ "trigger": "os.time", "contents": "os.time(${1})" },
 		{ "trigger": "os.clock", "contents": "os.clock(${1})" },
@@ -99,11 +104,13 @@
 		{ "trigger": "table.maxn", "contents": "table.maxn(${1})" },
 		{ "trigger": "table.concat", "contents": "table.concat(${1})" },
 		{ "trigger": "table.insert", "contents": "table.insert(${1})" },
+		{ "trigger": "table.move", "contents": "table.move(${1})" },
 
 		{ "trigger": "coroutine.running", "contents": "coroutine.running(${1})" },
 		{ "trigger": "coroutine.yield", "contents": "coroutine.yield(${1})" },
 		{ "trigger": "coroutine.status", "contents": "coroutine.status(${1})" },
 		{ "trigger": "coroutine.resume", "contents": "coroutine.resume(${1})" },
+		{ "trigger": "coroutine.isyieldable", "contents": "coroutine.isyieldable(${1})" },
 
 		{ "trigger": "entity.configParameter", "contents": "entity.configParameter(${1})" },
 		{ "trigger": "entity.randomizeParameter", "contents": "entity.randomizeParameter(${1})" },
@@ -201,6 +208,8 @@
 		{ "trigger": "entity.species", "contents": "entity.species(${1})" },
 		{ "trigger": "entity.emote", "contents": "entity.emote(${1})" },
 		{ "trigger": "entity.maxEnergy", "contents": "entity.maxEnergy(${1})" },
+		{ "trigger": "entity.sayPortrait", "contents": "entity.sayPortrait(${1})" },
+		{ "trigger": "entity.behavior", "contents": "entity.behavior(${1})" },
 		{ "trigger": "entity.health", "contents": "entity.health(${1})" },
 		{ "trigger": "entity.maxHealth", "contents": "entity.maxHealth(${1})" },
 
@@ -229,7 +238,7 @@
 		{ "trigger": "item.empty", "contents": "item.empty(${1})" },
 		{ "trigger": "item.friendlyName", "contents": "item.friendlyName(${1})" },
 		{ "trigger": "item.fuelAmount", "contents": "item.fuelAmount(${1})" },
-		{ "trigger": "item.hasQuestTriggerKey", "contents": "item.hasQuestTriggerKey(${1})" },
+		{ "trigger": "item.hasQuestTag", "contents": "item.hasQuestTag(${1})" },
 		{ "trigger": "item.iconDrawables", "contents": "item.iconDrawables(${1})" },
 		{ "trigger": "item.instanceValue", "contents": "item.instanceValue(${1})" },
 		{ "trigger": "item.is", "contents": "item.is(${1})" },
@@ -402,6 +411,8 @@
 		{ "trigger": "world.underground", "contents": "world.underground(${1})" },
 		{ "trigger": "world.windLevel", "contents": "world.windLevel(${1})" },
 		{ "trigger": "world.info", "contents": "world.info(${1})" },
+		{ "trigger": "world.isTileProtected", "contents": "world.isTileProtected(${1})" },
+		{ "trigger": "world.forceDestroyLiquid", "contents": "world.forceDestroyLiquid(${1})" },
 
 		{ "trigger": "effect.setParentDirectives", "contents": "effect.setParentDirectives(${1})" },
 		{ "trigger": "effect.configParameter", "contents": "effect.configParameter(${1})" },
