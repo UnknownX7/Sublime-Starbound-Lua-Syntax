@@ -9,10 +9,10 @@ To install this, it is recommended that you use [Package Control](https://packag
 2. Type `install` and press enter.
 3. Another text box should appear, type `Starbound` and you should see this plugin highlighted. Press <kbd>Enter</kbd> to install it.
 
-#### Sublime Text 3
-1. Once you have it installed you will need to disable the default Lua syntax. Press <kbd>Shift+Ctrl+P</kbd> again.
+#### Sublime Text 3 (and possibly 2)
+1. Once you have it installed you may need to disable the default Lua syntax (Sublime will probably try to suggest functions from default Lua). Press <kbd>Shift+Ctrl+P</kbd> again.
 2. Type `disable` and press enter.
-3. Type `lua` and press enter. (If you have any other Lua syntaxes you will need to disable them also or else their autocompletions and snippets will be shown.)
+3. Type `lua` and press enter.
 
 ### Manual Installation:
 1. Download this Git Repository's master branch as a `.zip` file. (Or you can download the latest [release](https://github.com/UnknownX7/Sublime-Starbound-Lua-Syntax/releases).)
@@ -20,8 +20,8 @@ To install this, it is recommended that you use [Package Control](https://packag
 3. Put the folder from the `.zip` into the location that was opened.
 4. Restart Sublime.
 
-#### Sublime Text 3
-1. Once you have it installed you will need to disable the default Lua syntax. Navigate to `Preferences > Settings - User`.
+#### Sublime Text 3 (and possibly 2)
+1. Once you have it installed you may need to disable the default Lua syntax (Sublime will probably try to suggest functions from default Lua). Navigate to `Preferences > Settings - User`.
 2. Add the following text:
 ```
 {
@@ -33,12 +33,17 @@ To install this, it is recommended that you use [Package Control](https://packag
 	]
 }
 ```
-Make sure that you also add any other Lua syntaxes that you have installed to prevent their autocompletions and snippets from being shown.
 
 ### Usage
 Navigate to `View > Syntax > Starbound Lua` to apply the syntax to the current file and any newly opened files.
 
 There are also custom templates for groups of specific lua hooks with documentation available. To use them, type `TEMPLATE` and use the arrow keys to select the correct template for your `.lua` file, then press <kbd>Tab</kbd> or <kbd>Enter</kbd>. These are intended for blank files and will immediately paste all known lua hooks for the selected category. You may press <kbd>Tab</kbd> again multiple times to highlight a predetermined order of text blocks for ease of editing. Moving your text cursor outside of the range of one of these text blocks will end the use of <kbd>Tab</kbd> selecting for all code snippets. These snippets will use hook information from the developers when available. Otherwise it is information gathered by trial and error.
+
+#### If you have other custom Lua syntaxes...
+If their scope is not correctly set, their functions will appear too. You can also disable them by doing the same steps as for the default Lua.
+
+#### Suggestions
+Open an issue if you would like to suggest anything. Or you can find me on the #starbound and ##starbound-modding IRC channels as `UnknownX`. (or the forums)
 
 #### Nightly Branch
 This branch is for upcoming changes to the Lua API. This will not be merged with the master branch until a stable update is released and changes are verified.
