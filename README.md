@@ -40,6 +40,7 @@ Navigate to `View > Syntax > Starbound Lua` to apply the syntax to the current f
 There are also custom templates for groups of specific lua hooks with documentation available. To use them, type `TEMPLATE` and use the arrow keys to select the correct template for your `.lua` file, then press <kbd>Tab</kbd> or <kbd>Enter</kbd>. These are intended for blank files and will immediately paste all known lua hooks for the selected category. You may press <kbd>Tab</kbd> again multiple times to highlight a predetermined order of text blocks for ease of editing. Moving your text cursor outside of the range of one of these text blocks will end the use of <kbd>Tab</kbd> selecting for all code snippets. These snippets will use hook information from the developers when available. Otherwise it is information gathered by trial and error.
 
 #### If you have other custom Lua syntaxes...
+If their scope is not correctly set, their functions and snippets will be suggested too. You can also disable them by doing the same steps above that you may have used for the default Lua syntax. (This syntax should never interfere with any other syntax. Please report it if it to me if it does.)
 
 #### Suggestions
 Open an issue if you would like to suggest anything. Or you can find me on the #starbound and ##starbound-modding IRC channels as `UnknownX`. (or the forums)
