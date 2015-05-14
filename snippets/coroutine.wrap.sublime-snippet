@@ -3,6 +3,6 @@
 	${3}
 end})${0}]]></content>
     <tabTrigger>coroutine.wrap</tabTrigger>
-    <scope>source.lua.starbound</scope>
+    <scope>source.lua.starbound - keyword.control.lua - constant.language.lua, source.lua.starbound string</scope>
     <description>coroutine.wrap</description>
 </snippet>

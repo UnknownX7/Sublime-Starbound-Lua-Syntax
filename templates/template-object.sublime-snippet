@@ -60,6 +60,6 @@ function die()
 end
 ${0}]]></content>
     <tabTrigger>TEMPLATE:object</tabTrigger>
-    <scope>source.lua.starbound</scope>
+    <scope>source.lua.starbound - keyword.control.lua - constant.language.lua - string</scope>
     <description>Object Hooks Template</description>
 </snippet>

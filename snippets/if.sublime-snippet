@@ -3,6 +3,6 @@
 	${2}
 end${0}]]></content>
 	<tabTrigger>if</tabTrigger>
-	<scope>source.lua.starbound</scope>
+	<scope>source.lua.starbound - constant.language.lua - string</scope>
 	<description>if x then end</description>
 </snippet>

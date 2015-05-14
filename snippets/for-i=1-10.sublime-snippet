@@ -3,6 +3,6 @@
 	${4:print($1)}
 end${0}]]></content>
     <tabTrigger>for</tabTrigger>
-    <scope>source.lua.starbound</scope>
+    <scope>source.lua.starbound - constant.language.lua - string</scope>
     <description>for i=1,10</description>
 </snippet>

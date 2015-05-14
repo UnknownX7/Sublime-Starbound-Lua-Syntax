@@ -45,6 +45,6 @@ function uninit()
 end
 ${0}]]></content>
     <tabTrigger>TEMPLATE:fireableItem</tabTrigger>
-    <scope>source.lua.starbound</scope>
+    <scope>source.lua.starbound - keyword.control.lua - constant.language.lua - string</scope>
     <description>Fireable Item Hooks Template</description>
 </snippet>
