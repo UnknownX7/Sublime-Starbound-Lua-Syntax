@@ -1,5 +1,5 @@
 {
-	"scope": "source.lua.starbound - keyword.control.lua - constant.language.lua, string",
+	"scope": "source.lua.starbound - keyword.control.lua - constant.language.lua, source.lua.starbound string",
 
 	"completions":
 	[
