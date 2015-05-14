@@ -401,7 +401,6 @@
 		{ "trigger": "world.placeMod", "contents": "world.placeMod(${1})" },
 		{ "trigger": "world.underground", "contents": "world.underground(${1})" },
 		{ "trigger": "world.windLevel", "contents": "world.windLevel(${1})" },
-		{ "trigger": "world.info", "contents": "world.info(${1})" },
 
 		{ "trigger": "effect.setParentDirectives", "contents": "effect.setParentDirectives(${1})" },
 		{ "trigger": "effect.configParameter", "contents": "effect.configParameter(${1})" },
