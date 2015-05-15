@@ -274,6 +274,7 @@
 		{ "trigger": "root.projectileConfig", "contents": "root.projectileConfig(${1})" },
 		{ "trigger": "root.projectileGravityMultiplier", "contents": "root.projectileGravityMultiplier(${1})" },
 		{ "trigger": "root.recipesForItem", "contents": "root.recipesForItem(${1})" },
+		{ "trigger": "root.printJson", "contents": "root.printJson(${1})" },
 
 		{ "trigger": "status.addEphemeralEffect", "contents": "status.addEphemeralEffect(${1})" },
 		{ "trigger": "status.addEphemeralEffects", "contents": "status.addEphemeralEffects(${1})" },
