@@ -212,6 +212,7 @@
 		{ "trigger": "entity.behavior", "contents": "entity.behavior(${1})" },
 		{ "trigger": "entity.health", "contents": "entity.health(${1})" },
 		{ "trigger": "entity.maxHealth", "contents": "entity.maxHealth(${1})" },
+		{ "trigger": "entity.spaces", "contents": "entity.spaces(${1})" },
 
 		{ "trigger": "fireableItem.cooldownTime", "contents": "fireableItem.cooldownTime(${1})" },
 		{ "trigger": "fireableItem.coolingDown", "contents": "fireableItem.coolingDown(${1})" },
@@ -275,6 +276,8 @@
 		{ "trigger": "root.projectileGravityMultiplier", "contents": "root.projectileGravityMultiplier(${1})" },
 		{ "trigger": "root.recipesForItem", "contents": "root.recipesForItem(${1})" },
 		{ "trigger": "root.printJson", "contents": "root.printJson(${1})" },
+		{ "trigger": "root.tenantConfig", "contents": "root.tenantConfig(${1})" },
+		{ "trigger": "root.getMatchingTenants", "contents": "root.getMatchingTenants(${1})" },
 
 		{ "trigger": "status.addEphemeralEffect", "contents": "status.addEphemeralEffect(${1})" },
 		{ "trigger": "status.addEphemeralEffects", "contents": "status.addEphemeralEffects(${1})" },
@@ -411,9 +414,14 @@
 		{ "trigger": "world.placeMod", "contents": "world.placeMod(${1})" },
 		{ "trigger": "world.underground", "contents": "world.underground(${1})" },
 		{ "trigger": "world.windLevel", "contents": "world.windLevel(${1})" },
-		{ "trigger": "world.info", "contents": "world.info(${1})" },
 		{ "trigger": "world.isTileProtected", "contents": "world.isTileProtected(${1})" },
 		{ "trigger": "world.forceDestroyLiquid", "contents": "world.forceDestroyLiquid(${1})" },
+		{ "trigger": "world.entityUniqueId", "contents": "world.entityUniqueId(${1})" },
+		{ "trigger": "world.objectSpaces", "contents": "world.objectSpaces(${1})" },
+		{ "trigger": "world.loadUniqueEntity", "contents": "world.loadUniqueEntity(${1})" },
+		{ "trigger": "world.polyContains", "contents": "world.polyContains(${1})" },
+		{ "trigger": "world.setUniqueId", "contents": "world.setUniqueId(${1})" },
+		{ "trigger": "world.findUniqueEntity", "contents": "world.findUniqueEntity(${1})" },
 
 		{ "trigger": "effect.setParentDirectives", "contents": "effect.setParentDirectives(${1})" },
 		{ "trigger": "effect.configParameter", "contents": "effect.configParameter(${1})" },
@@ -563,6 +571,10 @@
 		{ "trigger": "util.debugLog", "contents": "util.debugLog(${1})" },
 		{ "trigger": "util.wait", "contents": "util.wait(${1})" },
 		{ "trigger": "util.aimVector", "contents": "util.aimVector(${1})" },
+		{ "trigger": "util.round", "contents": "util.round(${1})" },
+		{ "trigger": "util.debugPoly", "contents": "util.debugPoly(${1})" },
+		{ "trigger": "util.hashString", "contents": "util.hashString(${1})" },
+		{ "trigger": "util.filter", "contents": "util.filter(${1})" },
 
 		{ "trigger": "vec2.eq", "contents": "vec2.eq(${1})" },
 		{ "trigger": "vec2.mag", "contents": "vec2.mag(${1})" },
