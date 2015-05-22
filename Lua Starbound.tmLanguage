@@ -228,14 +228,14 @@
 		<!-- Starbound Functions -->
 		<dict>
 			<key>match</key>
-			<string>\b(hasState|shuffleStates|moveStateToEnd|pickState|endState|stateDesc|stateCooldown|clear|setParentDirectives|translate|move|moveX|moveTo|getExpirationTime|findPath|updatePath|advancePath|attemptUnsticking|incrementStuckCount|approachTargetPosition|passedTarget|jump|timedDrop|keepDropping|timeToFall|validStandingPosition|findGroundPosition|onSolidGround|padBoundBox|tickMoveDistance|debugPathEdgeColor|debugPath|boundingBox|itemType|swapItemSlot|isAttacking|attackTargetId|stateName|stateTargetId|shouldAttackOnSight|attack|stopAttacking|nearbyAttackerCount|isInside|isTimeFor|sendNotification|receiveNotification|noticePlayers|controlFace|debugLog|debugRect|hasCapability|spawnedBy|sayToTarget)\b(?=[(\s{])</string>
+			<string>\b(clear|setParentDirectives|translate|move|moveX|moveTo|getExpirationTime|findPath|updatePath|advancePath|attemptUnsticking|incrementStuckCount|approachTargetPosition|passedTarget|jump|timedDrop|keepDropping|timeToFall|validStandingPosition|findGroundPosition|onSolidGround|padBoundBox|tickMoveDistance|debugPathEdgeColor|debugPath|boundingBox|itemType|swapItemSlot|isAttacking|attackTargetId|stateName|stateTargetId|shouldAttackOnSight|attack|stopAttacking|nearbyAttackerCount|isInside|isTimeFor|sendNotification|receiveNotification|noticePlayers|controlFace|debugLog|debugRect|hasCapability|spawnedBy|sayToTarget)\b(?=[(\s{])</string>
 			<key>name</key>
 			<string>support.function.library.lua</string>
 		</dict>
 		<!-- Starbound Helper Libraries -->
 		<dict>
 			<key>match</key>
-			<string>\b(util\.(blockSensorTest|toDirection|clamp|incWrap|wrapAngle|trackTarget|trackExistingTarget|easeInOutQuad|randomDirection|debugRect|debugLine|debugLog|wait|aimVector)|vec2\.(eq|mag|norm|mul|div|add|sub|angle|rotate|intersect)|entityProxy\.(create)|sensors\.(create)|stateMachine\.(create|scanScripts))\b</string>
+			<string>\b(util\.(blockSensorTest|toDirection|clamp|incWrap|wrapAngle|trackTarget|trackExistingTarget|easeInOutQuad|randomDirection|debugRect|debugLine|debugLog|wait|aimVector)|vec2\.(eq|mag|norm|mul|div|add|sub|angle|rotate|intersect)|entityProxy\.(create)|sensors\.(create)|stateMachine\.(create|scanScripts)|[A-Za-z_](\w|[.])*\.(hasState|shuffleStates|moveStateToEnd|pickState|endState|stateDesc|stateCooldown))\b</string>
 			<key>name</key>
 			<string>support.function.library.lua</string>
 		</dict>
