@@ -422,6 +422,7 @@
 		{ "trigger": "world.polyContains", "contents": "world.polyContains(${1})" },
 		{ "trigger": "world.setUniqueId", "contents": "world.setUniqueId(${1})" },
 		{ "trigger": "world.findUniqueEntity", "contents": "world.findUniqueEntity(${1})" },
+		{ "trigger": "world.spawnTreasure", "contents": "world.spawnTreasure(${1})" },
 
 		{ "trigger": "effect.setParentDirectives", "contents": "effect.setParentDirectives(${1})" },
 		{ "trigger": "effect.configParameter", "contents": "effect.configParameter(${1})" },
