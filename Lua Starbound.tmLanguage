@@ -235,7 +235,7 @@
 		<!-- Starbound Helper Libraries -->
 		<dict>
 			<key>match</key>
-			<string>\b(util\.(blockSensorTest|toDirection|clamp|incWrap|wrapAngle|trackTarget|trackExistingTarget|easeInOutQuad|randomDirection|debugRect|debugLine|debugLog|wait|aimVector)|vec2\.(eq|mag|norm|mul|div|add|sub|angle|rotate|intersect)|entityProxy\.(create)|sensors\.(create)|stateMachine\.(create|scanScripts)|[A-Za-z_](\w|[.])*\.(hasState|shuffleStates|moveStateToEnd|pickState|endState|stateDesc|stateCooldown))\b</string>
+			<string>\b(util\.(blockSensorTest|toDirection|clamp|incWrap|wrapAngle|trackTarget|trackExistingTarget|easeInOutQuad|randomDirection|debugRect|debugLine|debugLog|wait|aimVector)|vec2\.(eq|mag|norm|mul|div|add|sub|angle|rotate|intersect)|entityProxy\.(create)|sensors\.(create)|stateMachine\.(create|scanScripts)|[A-Za-z_](\w|[.])*\.(hasState|shuffleStates|moveStateToEnd|pickState|endState|stateDesc|stateCooldown|enteringState|leavingState))\b</string>
 			<key>name</key>
 			<string>support.function.library.lua</string>
 		</dict>

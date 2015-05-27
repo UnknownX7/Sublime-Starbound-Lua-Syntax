@@ -578,6 +578,8 @@
 		{ "trigger": "endState", "contents": "endState(${1})" },
 		{ "trigger": "stateDesc", "contents": "stateDesc(${1})" },
 		{ "trigger": "stateCooldown", "contents": "stateCooldown(${1})" },
+		{ "trigger": "enteringState", "contents": "enteringState(${1})" },
+		{ "trigger": "leavingState", "contents": "leavingState(${1})" },
 
 		{ "trigger": "clear", "contents": "clear(${1})" },
 		{ "trigger": "setParentDirectives", "contents": "setParentDirectives(${1})" },
