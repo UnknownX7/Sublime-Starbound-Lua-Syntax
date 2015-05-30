@@ -27,7 +27,6 @@ To install this, it is recommended that you use [Package Control](https://packag
 {
 	"ignored_packages":
 	[
-		"ASP",
 		"Vintage",
 		"Lua"
 	]
