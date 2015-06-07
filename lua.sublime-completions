@@ -29,6 +29,7 @@
 		{ "trigger": "error", "contents": "error(${1})" },
 		{ "trigger": "assert", "contents": "assert(${1})" },
 		{ "trigger": "ipairs", "contents": "ipairs(${1})" },
+		{ "trigger": "require", "contents": "require(${1})" },
 
 		{ "trigger": "bit32.extract", "contents": "bit32.extract(${1})" },
 		{ "trigger": "bit32.btest", "contents": "bit32.btest(${1})" },
@@ -424,6 +425,8 @@
 		{ "trigger": "world.findUniqueEntity", "contents": "world.findUniqueEntity(${1})" },
 		{ "trigger": "world.spawnTreasure", "contents": "world.spawnTreasure(${1})" },
 		{ "trigger": "world.wrap", "contents": "world.wrap(${1})" },
+		{ "trigger": "world.spawnStagehand", "contents": "world.spawnStagehand(${1})" },
+		{ "trigger": "world.stagehandType", "contents": "world.stagehandType(${1})" },
 
 		{ "trigger": "effect.setParentDirectives", "contents": "effect.setParentDirectives(${1})" },
 		{ "trigger": "effect.configParameter", "contents": "effect.configParameter(${1})" },
