@@ -279,6 +279,8 @@
 		{ "trigger": "root.printJson", "contents": "root.printJson(${1})" },
 		{ "trigger": "root.tenantConfig", "contents": "root.tenantConfig(${1})" },
 		{ "trigger": "root.getMatchingTenants", "contents": "root.getMatchingTenants(${1})" },
+		{ "trigger": "root.assetJson", "contents": "root.assetJson(${1})" },
+		{ "trigger": "root.behaviorModule", "contents": "root.behaviorModule(${1})" },
 
 		{ "trigger": "status.addEphemeralEffect", "contents": "status.addEphemeralEffect(${1})" },
 		{ "trigger": "status.addEphemeralEffects", "contents": "status.addEphemeralEffects(${1})" },
