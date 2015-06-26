@@ -4,7 +4,7 @@
 	"completions":
 	[
 		"in", "else", "return", "false", "true", "break", "or", "and",
-		"_VERSION", "_ENV", "self", "storage", "math.huge", "math.pi", "math.maxinteger", "math.mininteger",
+		"_VERSION", "_ENV", "self", "storage", "math.huge", "math.pi", "math.maxinteger", "math.mininteger", "utf8.charpattern",
 
 		{ "trigger": "setmetatable", "contents": "setmetatable(${1})" },
 		{ "trigger": "print", "contents": "print(${1})" },
@@ -429,6 +429,9 @@
 		{ "trigger": "world.wrap", "contents": "world.wrap(${1})" },
 		{ "trigger": "world.spawnStagehand", "contents": "world.spawnStagehand(${1})" },
 		{ "trigger": "world.stagehandType", "contents": "world.stagehandType(${1})" },
+		{ "trigger": "world.platformerPathStart", "contents": "world.platformerPathStart(${1})" },
+		{ "trigger": "world.callLocalScriptedEntity", "contents": "world.callLocalScriptedEntity(${1})" },
+		{ "trigger": "world.findPlatformerPath", "contents": "world.findPlatformerPath(${1})" },
 
 		{ "trigger": "effect.setParentDirectives", "contents": "effect.setParentDirectives(${1})" },
 		{ "trigger": "effect.configParameter", "contents": "effect.configParameter(${1})" },
@@ -610,6 +613,12 @@
 		{ "trigger": "endState", "contents": "endState(${1})" },
 		{ "trigger": "stateDesc", "contents": "stateDesc(${1})" },
 		{ "trigger": "stateCooldown", "contents": "stateCooldown(${1})" },
+
+		{ "trigger": "utf8.offset", "contents": "utf8.offset(${1})" },
+		{ "trigger": "utf8.char", "contents": "utf8.char(${1})" },
+		{ "trigger": "utf8.codes", "contents": "utf8.codes(${1})" },
+		{ "trigger": "utf8.codepoint", "contents": "utf8.codepoint(${1})" },
+		{ "trigger": "utf8.len", "contents": "utf8.len(${1})" },
 
 		{ "trigger": "clear", "contents": "clear(${1})" },
 		{ "trigger": "setParentDirectives", "contents": "setParentDirectives(${1})" },
