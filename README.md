@@ -45,4 +45,5 @@ If their scope is not correctly set, their functions and snippets will be sugges
 Open an issue if you would like to suggest anything. Or you can find me on the #starbound and ##starbound-modding IRC channels as `UnknownX`. (or the forums)
 
 #### Nightly Branch
-This branch is for upcoming changes to the Lua API. This will not be merged with the master branch until a stable update is released and changes are verified.
+This branch is no longer needed and has been discontinued.
+~~This branch is for upcoming changes to the Lua API. This will not be merged with the master branch until a stable update is released and changes are verified.~~
