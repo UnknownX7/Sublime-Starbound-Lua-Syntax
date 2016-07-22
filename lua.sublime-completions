@@ -676,6 +676,19 @@
 		{ "trigger": "vehicle.setPersistent", "contents": "vehicle.setPersistent(${1})" },
 		{ "trigger": "vehicle.setLoungeEmote", "contents": "vehicle.setLoungeEmote(${1})" },
 
+		{ "trigger": "config.configParameter", "contents" : "config.configParameter(${1})" },
+		{ "trigger": "config.randomizeParameter", "contents" : "config.randomizeParameter(${1})" },
+		{ "trigger": "config.randomizeParameterRange", "contents" : "config.randomizeParameterRange(${1})" },
+		{ "trigger": "config.staticRandomizeParameter", "contents" : "config.staticRandomizeParameter(${1})" },
+
+		{ "trigger": "projectile.collision", "contents" : "projectile.collision(${1})" },
+		{ "trigger": "projectile.die", "contents" : "projectile.die(${1})" },
+		{ "trigger": "projectile.processAction", "contents" : "projectile.processAction(${1})" },
+		{ "trigger": "projectile.setPower", "contents" : "projectile.setPower(${1})" },
+		{ "trigger": "projectile.setTimeToLive", "contents" : "projectile.setTimeToLive(${1})" },
+		{ "trigger": "projectile.sourceEntity", "contents" : "projectile.sourceEntity(${1})" },
+		{ "trigger": "projectile.timeToLive", "contents" : "projectile.timeToLive(${1})" },
+
 		{ "trigger": "init", "contents": "init(${1})" },
 		{ "trigger": "update", "contents": "update(${1})" },
 		{ "trigger": "die", "contents": "die(${1})" },
