@@ -45,7 +45,7 @@ function onNodeConnectionChange()
 	${4:--- Called when a node is connected or disconnected}
 end
 
-function onInboundNodeChange(args)
+function onInputNodeChange(args)
 	${5:--- Called when the level of an inbound connected node changes
 	--
 	-- @tab args Map of:
