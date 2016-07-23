@@ -228,7 +228,7 @@
 		<!-- Starbound Hooks -->
 		<dict>
 			<key>match</key>
-			<string>(?&lt;![^.]\.|:)\b(damage|die|hit|init|input|interact|onInputNodeChange|onInteraction|onNodeConnectionChange|shouldDie|applyDamageRequest|uninit|update|shouldDestroy|destroy)\b(?=[(\s{])</string>
+			<string>(?&lt;![^.]\.|:)\b(damage|die|hit|init|input|interact|onInputNodeChange|onInteraction|onNodeConnectionChange|shouldDie|uninit|update|shouldDestroy|destroy)\b(?=[(\s{])</string>
 			<key>name</key>
 			<string>support.function.library.lua</string>
 		</dict>

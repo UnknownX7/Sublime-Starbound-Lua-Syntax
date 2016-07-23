@@ -854,7 +854,6 @@
 		{ "trigger": "world.universeFlags", "contents" : "world.universeFlags(${1})" },
 		{ "trigger": "world.warpPhase", "contents" : "world.warpPhase(${1})" },
 
-		{ "trigger": "applyDamageRequest", "contents" : "applyDamageRequest(${1})" },
 		{ "trigger": "damage", "contents" : "damage(${1})" },
 		{ "trigger": "destroy", "contents" : "destroy(${1})" },
 		{ "trigger": "die", "contents" : "die(${1})" },
